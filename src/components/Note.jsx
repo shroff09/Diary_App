@@ -11,7 +11,7 @@ const Note = ({list,callBack,callBackEdit,switchValue}) => {
     return (
         <div>
           <div>{
-          switchValue?<Button onClick={()=>setStyle('row-reverse')}>Sort by Newest</Button>:null
+          switchValue?<Button style={{margin:"20px"}} onClick={()=>setStyle('row-reverse')}>Sort by Newest</Button>:null
           }</div>
             <ul style={{margin:"25px",padding:"20px",flexDirection:`${style}`}}>
             {
